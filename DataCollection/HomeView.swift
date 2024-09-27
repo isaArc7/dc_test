@@ -18,6 +18,7 @@ struct HomeView: View {
     var body: some View {
         VStack() {
             VStack() {
+                Spacer().frame(height: 60)
                 Text("Home")
                     .font(.title)
             }
@@ -36,7 +37,7 @@ struct HomeView: View {
                         cameraViewButton
                         historyViewButton
                     }
-                    .padding(.top, 60)
+                    .padding(.top, 40)
                 }
             }
         }
