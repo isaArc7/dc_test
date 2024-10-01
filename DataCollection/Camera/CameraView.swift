@@ -73,11 +73,13 @@ struct CameraView: View {
                 }
                 .padding()
                 .edgesIgnoringSafeArea(.all)
+                .zIndex(2)
             } else {
 //                VStack {
 //                    BackButtonView()
 //                    Spacer()
 //                }
+//                .zIndex(2)
                 VStack {
                     BackButtonView()
                     Spacer().frame(height: 10)
@@ -114,28 +116,28 @@ struct CameraView: View {
 //                        CameraManager.shared.stopSession()
 //                        CameraManager.shared.setupCamera()
                         
-//                        let currentOrientation = UIDevice.current.orientation
-//
-//                        var ori: AVCaptureVideoOrientation
-//
-//                        switch currentOrientation {
-//                        case .portrait:
-//                            print("im portrait")
-//                            ori = .portrait
-//                        case .landscapeRight:
-//                            print("im landscapeRight")
-//                            ori = .portrait
-//                        case .landscapeLeft:
-//                            print("im landscapeLeft")
-//                            ori = .portrait
-//                        case .portraitUpsideDown:
-//                            print("portraitUpsideDown")
-//                            ori = .portraitUpsideDown
-//                        default:
-//                            ori = .portrait
-//
-//                        }
-//                        CameraManager.shared.videoPreview?.videoPreviewLayer.connection?.videoOrientation = ori
+                        let currentOrientation = UIDevice.current.orientation
+
+                        var ori: AVCaptureVideoOrientation
+
+                        switch currentOrientation {
+                        case .portrait:
+                            print("im portrait")
+                            ori = .portrait
+                        case .landscapeRight:
+                            print("im landscapeRight")
+                            ori = .portrait
+                        case .landscapeLeft:
+                            print("im landscapeLeft")
+                            ori = .portrait
+                        case .portraitUpsideDown:
+                            print("portraitUpsideDown")
+                            ori = .portraitUpsideDown
+                        default:
+                            ori = .portrait
+
+                        }
+                        CameraManager.shared.videoPreview?.videoPreviewLayer.connection?.videoOrientation = ori
 //                        let ooo = CameraManager.shared.videoPreview?.videoPreviewLayer.connection?.videoOrientation
 //                        print("1:\(UIDeviceOrientation)")
 //                        print("2:\(ori)")

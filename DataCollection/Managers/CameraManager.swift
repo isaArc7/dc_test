@@ -29,7 +29,7 @@ class CameraManager: NSObject, AVCaptureFileOutputRecordingDelegate, ObservableO
     private let videoQueue = DispatchQueue(label: "com.DC.video")
     private let captureQueue = DispatchQueue(label: "com.DC.captureQueue")
     
-    var videoPreview : VideoPreviewView?
+    var videoPreview : CameraViewControllerRepresentable.VideoPreviewView?
     
     public static var shared: CameraManager = {
         let mgr = CameraManager()

@@ -27,7 +27,7 @@ class CameraViewController: UIViewController {
         super.viewDidLoad()
 
         previewView.videoPreviewLayer.session = CameraManager.shared.session
-//        previewView.videoPreviewLayer.videoGravity = .resizeAspectFill
+        previewView.videoPreviewLayer.videoGravity = .resizeAspectFill
         previewView.videoPreviewLayer.frame = view.bounds
 //        print("in viewDidLoad: ", view.layer.bounds)
         view.layer.addSublayer(previewView.videoPreviewLayer)
@@ -59,7 +59,7 @@ class CameraViewController: UIViewController {
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        previewView.videoPreviewLayer.frame = view.bounds
+//        previewView.videoPreviewLayer.frame = view.bounds
 ////        print("in viewDidLayoutSubviews, .frame: ", previewView.videoPreviewLayer.frame)
 ////        print("in viewDidLayoutSubviews, .bounds: ",view.layer.bounds)
 //        let currentOrientation = UIDevice.current.orientation
@@ -119,22 +119,22 @@ class CameraViewController: UIViewController {
     
     
     func updatePreviewLayerOrientation() {
-            guard let connection = previewView.videoPreviewLayer.connection else { return }
-            
-            switch UIDevice.current.orientation {
-            case .portrait:
-                connection.videoOrientation = .portrait
-            case .landscapeRight:
-                connection.videoOrientation = .landscapeLeft
-            case .landscapeLeft:
-                connection.videoOrientation = .landscapeRight
-            case .portraitUpsideDown:
-                connection.videoOrientation = .portraitUpsideDown
-            default:
-                connection.videoOrientation = .portrait
-            }
-            
-            previewView.videoPreviewLayer.frame = view.bounds
+        guard let connection = previewView.videoPreviewLayer.connection else { return }
+        
+        switch UIDevice.current.orientation {
+        case .portrait:
+            connection.videoOrientation = .portrait
+        case .landscapeRight:
+            connection.videoOrientation = .landscapeLeft
+        case .landscapeLeft:
+            connection.videoOrientation = .landscapeRight
+        case .portraitUpsideDown:
+            connection.videoOrientation = .portraitUpsideDown
+        default:
+            connection.videoOrientation = .portrait
         }
+        
+        previewView.videoPreviewLayer.frame = view.bounds
+    }
 }
 
