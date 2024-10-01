@@ -45,7 +45,7 @@
 		069BDF9C2CA5A1DD000A2126 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069BDF9B2CA5A1DD000A2126 /* CameraViewController.swift */; };
 		069BDF9E2CA5A1E8000A2126 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069BDF9D2CA5A1E8000A2126 /* CameraView.swift */; };
 		35A795857C15AD9E579340E1 /* Pods_DataCollection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6861FD0E70F86D082B7AF9 /* Pods_DataCollection.framework */; };
-		C5B42B862CA6E84100D3FED8 /* dc_test.tflite in Resources */ = {isa = PBXBuildFile; fileRef = C5B42B852CA6E84100D3FED8 /* dc_test.tflite */; };
+		C5ACDB9A2CA720AA00FCD50A /* dc_test.tflite in Resources */ = {isa = PBXBuildFile; fileRef = C5ACDB992CA720AA00FCD50A /* dc_test.tflite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,7 +90,7 @@
 		069BDFA32CA5A451000A2126 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4905B9A3D7438D75228668BB /* Pods-DataCollection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataCollection.debug.xcconfig"; path = "Target Support Files/Pods-DataCollection/Pods-DataCollection.debug.xcconfig"; sourceTree = "<group>"; };
 		6E6861FD0E70F86D082B7AF9 /* Pods_DataCollection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataCollection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C5B42B852CA6E84100D3FED8 /* dc_test.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = dc_test.tflite; sourceTree = "<group>"; };
+		C5ACDB992CA720AA00FCD50A /* dc_test.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = dc_test.tflite; sourceTree = "<group>"; };
 		F7EE52A5C0F580679EFDB2D5 /* Pods-DataCollection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataCollection.release.xcconfig"; path = "Target Support Files/Pods-DataCollection/Pods-DataCollection.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,7 +109,7 @@
 		060246052CA62AAB00C063FB /* tfliteModels */ = {
 			isa = PBXGroup;
 			children = (
-				C5B42B852CA6E84100D3FED8 /* dc_test.tflite */,
+				C5ACDB992CA720AA00FCD50A /* dc_test.tflite */,
 			);
 			path = tfliteModels;
 			sourceTree = "<group>";
@@ -298,7 +298,7 @@
 			files = (
 				069BDF592CA59F3A000A2126 /* Preview Assets.xcassets in Resources */,
 				069BDF562CA59F3A000A2126 /* Assets.xcassets in Resources */,
-				C5B42B862CA6E84100D3FED8 /* dc_test.tflite in Resources */,
+				C5ACDB9A2CA720AA00FCD50A /* dc_test.tflite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
