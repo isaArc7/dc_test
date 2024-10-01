@@ -76,16 +76,17 @@ struct ParamsView: View {
 //                }
                 
                 List {
-                    Toggle(isOn: $viewModel.pubShowMonitoredOnly) {
-                        Text("Show Monitored Params Only")
-                    }
-                    
                     Toggle(isOn: $viewModel.pubSelectAll) {
                         Text("Select All")
                     }
                     .onChange(of: viewModel.pubSelectAll) { newValue in
                         viewModel.toggleSelectAll(newValue)
                     }
+                    
+                    Toggle(isOn: $viewModel.pubShowMonitoredOnly) {
+                        Text("Show Monitored Params Only")
+                    }
+                    
                     
                     ForEach(viewModel.filteredParams, id: \.self) { param in
                         let isSet = viewModel.pubDataSystem.pubAllMonitoringParams.contains(param)

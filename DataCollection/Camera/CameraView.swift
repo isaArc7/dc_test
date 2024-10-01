@@ -153,7 +153,18 @@ struct CameraView: View {
                 .font(.headline)
             Text("Collected \(samplingMgr.pubSamplesCollected) samples.")
                 .font(.subheadline)
-            Text("Selected Label: \(samplingMgr.label)")
+            
+            if samplingMgr.pubPredictMode == .manual {
+                Text("Label: \(samplingMgr.label)")
+            }
+            
+            if samplingMgr.pubPredictMode == .general {
+                if samplingMgr.labelProbs.count != 3 || !viewModel.pubIsCollecting {
+                    Text("dry: 0\npartially covered snow: 0\nfully covered snow: 0")
+                } else {
+                    Text("dry: \(samplingMgr.labelProbs[0])\npartially covered snow: \(samplingMgr.labelProbs[1])\nfully covered snow: \(samplingMgr.labelProbs[2])")
+                }
+            }
             
             Picker("Selected Mode", selection: $samplingMgr.pubPredictMode) {
                 ForEach(samplingMgr.predictModes, id: \.self) { mode in
