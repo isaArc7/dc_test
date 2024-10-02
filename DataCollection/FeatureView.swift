@@ -9,9 +9,10 @@ import SwiftUI
 
 enum PageType: String {
     case home = "Home"
+    case managedevice = "Manage Device"
+    case datasource = "Data Source"
     case camera = "Camera"
     case history = "History"
-    case managedevice = "Manage Device"
 }
 
 class FeatureViewModel: ObservableObject {
@@ -30,6 +31,10 @@ struct FeatureView: View {
         VStack {
             if pageMgr.page == .home {
                 HomeView()
+            }
+            
+            if pageMgr.page == .datasource {
+                DataSourceView()
             }
             
             if pageMgr.page == .camera {

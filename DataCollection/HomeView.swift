@@ -17,23 +17,26 @@ struct HomeView: View {
     
     var body: some View {
         VStack() {
-            VStack() {
-                Spacer().frame(height: 60)
-                Text("Home")
-                    .font(.title)
+            HStack() {
+                Spacer()
+                bluetoothViewButton
+                    .font(.system(size: 20))
+                    .fontWeight(.medium)
+                    .padding()
             }
             
             VStack() {
+                
                 if isLandscape {
                     HStack {
-                        manageDeviceViewButton
+                        dataSourceViewButton
                         cameraViewButton
                         historyViewButton
                     }
                     .padding(.top, 80)
                 } else {
                     VStack {
-                        manageDeviceViewButton
+                        dataSourceViewButton
                         cameraViewButton
                         historyViewButton
                     }
@@ -45,11 +48,19 @@ struct HomeView: View {
         Spacer()
     }
     
-    private var manageDeviceViewButton: some View {
+    private var bluetoothViewButton: some View {
         Button {
             FeatureViewModel.shared.page = .managedevice
         } label: {
-            Text("Manage Devices")
+            Text("Bluetooth")
+        }
+    }
+    
+    private var dataSourceViewButton: some View {
+        Button {
+            FeatureViewModel.shared.page = .datasource
+        } label: {
+            Text("Data Source")
                 .frame(width: 200, height: 100)
         }
         .buttonStyle(.bordered)

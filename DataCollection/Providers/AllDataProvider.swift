@@ -16,6 +16,8 @@ enum Param: Equatable, Hashable {
 class AllDataProvider: ObservableObject {
     var OBDIICommandList: [OBDIICommand] = [OBDIICommand.engineSpeed, OBDIICommand.throttlePos, OBDIICommand.vehicleSpeed, OBDIICommand.engineFuelRate, OBDIICommand.commandedAirFuelEqRatio, OBDIICommand.intakeAirTemp, OBDIICommand.intakeManifoldAbsPressure, OBDIICommand.ambientAirTemp]
     
+    var RWISParamList: [String] = []
+    
     var RegularParamList: [String] = ["Latitude", "Longitude","Altitude","Rotation Rate X", "Rotation Rate Y", "Rotation Rate Z",
                                           "Accel X","Accel Y","Accel Z"]
     

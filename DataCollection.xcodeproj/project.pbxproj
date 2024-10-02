@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0602460D2CA653F700C063FB /* TFLiteExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0602460C2CA653F700C063FB /* TFLiteExtension.swift */; };
+		061D75612CAC4ED500E503D5 /* DataSourceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061D75602CAC4ED500E503D5 /* DataSourceView.swift */; };
 		069BDF522CA59F39000A2126 /* DataCollectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069BDF512CA59F39000A2126 /* DataCollectionApp.swift */; };
 		069BDF542CA59F39000A2126 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069BDF532CA59F39000A2126 /* ContentView.swift */; };
 		069BDF562CA59F3A000A2126 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 069BDF552CA59F3A000A2126 /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		0602460C2CA653F700C063FB /* TFLiteExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFLiteExtension.swift; sourceTree = "<group>"; };
+		061D75602CAC4ED500E503D5 /* DataSourceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceView.swift; sourceTree = "<group>"; };
 		069BDF4E2CA59F39000A2126 /* DataCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		069BDF512CA59F39000A2126 /* DataCollectionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCollectionApp.swift; sourceTree = "<group>"; };
 		069BDF532CA59F39000A2126 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				069BDF792CA5A082000A2126 /* FeatureView.swift */,
 				069BDF752CA5A064000A2126 /* HomeView.swift */,
 				069BDF812CA5A0E2000A2126 /* BackButtonView.swift */,
+				061D75602CAC4ED500E503D5 /* DataSourceView.swift */,
 				069BDF712CA5A040000A2126 /* ManageDeviceView.swift */,
 				069BDF6F2CA5A029000A2126 /* MonitorButton.swift */,
 				069BDF612CA59FB1000A2126 /* PeripheralWrapper.swift */,
@@ -393,6 +396,7 @@
 				069BDF862CA5A10D000A2126 /* GyroscopeProvider.swift in Sources */,
 				069BDF882CA5A129000A2126 /* GPSProvider.swift in Sources */,
 				069BDF6E2CA5A01A000A2126 /* OBDIICommand.swift in Sources */,
+				061D75612CAC4ED500E503D5 /* DataSourceView.swift in Sources */,
 				069BDF702CA5A029000A2126 /* MonitorButton.swift in Sources */,
 				069BDF662CA59FDD000A2126 /* ParamsView.swift in Sources */,
 				069BDF842CA5A0FB000A2126 /* AllDataProvider.swift in Sources */,

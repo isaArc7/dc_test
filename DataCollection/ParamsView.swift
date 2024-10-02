@@ -68,13 +68,6 @@ struct ParamsView: View {
                         .multilineTextAlignment(.center)
                 }
                 
-//
-//                var filteredParams: [String] {
-//                    dataSystem.allAvailableParams.filter { param in
-//                        (!viewModel.pubShowMonitoredOnly || dataSystem.allMonitoringParams.contains(param))
-//                    }
-//                }
-                
                 List {
                     Toggle(isOn: $viewModel.pubSelectAll) {
                         Text("Select All")
